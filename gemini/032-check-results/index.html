@@ -11,20 +11,22 @@
       
       
       
+        <link rel="prev" href="../031-search/">
       
-        <link rel="next" href="gemini/02-access/">
+      
+        <link rel="next" href="../041-threathunt/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
-        <title>Google SecOps ハンズオン</title>
+        <title>3.2. 検索結果の確認 - Google SecOps ハンズオン</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -43,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#google-security-operations" class="md-skip">
+        <a href="#3" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="." title="Google SecOps ハンズオン" class="md-header__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
+    <a href="../.." title="Google SecOps ハンズオン" class="md-header__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              概要
+              3.2. 検索結果の確認
             
           </span>
         </div>
@@ -173,7 +175,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Google SecOps ハンズオン" class="md-nav__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
+    <a href="../.." title="Google SecOps ハンズオン" class="md-nav__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -188,19 +190,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -210,7 +203,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -219,17 +211,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -244,7 +238,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AI (Gemini) 機能
@@ -258,7 +252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/02-access/" class="md-nav__link">
+      <a href="../02-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -277,17 +271,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -302,7 +298,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             3. 基本操作
@@ -316,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/031-search/" class="md-nav__link">
+      <a href="../031-search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -335,10 +331,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="gemini/032-check-results/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3.2. 検索結果の確認
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -348,6 +365,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 検索結果の確認
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -404,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/041-threathunt/" class="md-nav__link">
+      <a href="../041-threathunt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/042-create-query/" class="md-nav__link">
+      <a href="../042-create-query/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -456,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/05-summary/" class="md-nav__link">
+      <a href="../05-summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,6 +544,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 検索結果の確認
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -512,11 +575,48 @@
 
 
 
-<h1 id="google-security-operations">Google Security Operations ハンズオン</h1>
-<p><img alt="image-20250316005953327" src="images/image-20250316005953327.png" /></p>
-<p>Google Security Operations (SecOps) ハンズオンにようこそ！ </p>
-<p>このハンズオンでは SecOps を実際に操作することで、「AI を搭載したインテリジェンス主導のセキュリティ運用基盤」の様々な活用方法を体験します。</p>
-<p><a href="./gemini/02-access">Gemini in SecOps 機能コース</a> :  AI を活用したセキュリティ運用の方法を確認します。(約20分)</p>
+<h1 id="3">3. 基本操作</h1>
+<p>基本的な検索操作を通じて、SecOps コンソールの画面構成を確認します。</p>
+<h2 id="32">3.2  検索結果の確認</h2>
+<hr />
+<p>１．検索結果を確認します。 画面上部には、実行されたクエリと、検索対象の期間が表示されています。</p>
+<p><img alt="image-20250317214457880" src="../images/image-20250317214457880.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>ドメイン名でよく検索される「通信の宛先」や「DNSの名前解決」の項目が含まれたクエリになっています。また、対象期間は直近1日間で検索されたことがわかります。</p>
+</div>
+<p>２．画面中段には、<code>OVERVIEW</code> や <code>EVENTS</code> などのタブが並んでおり、現在は <code>OVERVIEW</code> が選択されています。その下には <code>Gemini Summary</code> として Gemini による検索結果の要約が表示されています。 <u>ここで時間をとって内容を確認してください。</u></p>
+<p><img alt="image-20250317215346508" src="../images/image-20250317215346508.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>1000 件以上の DNS ログが該当するようです。さらに、451 件の IP アドレスが関連すること（＝期間中にアクセスした）と、10.0.3.31などが一番関連した(=一番アクセスした) IP アドレスであること等がわかります。</p>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>その他にも、一番関連する FQDN 名、一番アクセスした端末のホスト名などが表示されています。</p>
+</div>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>要約の下に <code>Filter to show activity for IP address 10.0.7.84</code>  などのボタンで表示されています。これは、追加の調査を行いたい場合の表示フィルタ候補です。</p>
+</div>
+<p>３．画面下段には、<code>Entity summary</code> や <code>Prevalence of Assets</code> 、<code>Associated Entities</code> などのパネルが並んでいます。WHOIS の情報やタイムラインでのログの分布、関連する IP アドレスが表示されています。</p>
+<p><img alt="image-20250317221940838" src="../images/image-20250317221940838.png" /></p>
+<p><img alt="image-20250317222104298" src="../images/image-20250317222104298.png" /></p>
+<p>４．画面中段のタブに戻り <strong>Event タブ</strong> をクリックします。検索でヒットしたログについて、時系列トレンドと、具体的な個別のログが確認できます。</p>
+<p><img alt="image-20250317222438317" src="../images/image-20250317222438317.png" /></p>
+<p>５．画面左の<code>AGGREGATIONS</code> ウィンドウで、ログの集計情報が確認できます。<strong>GROUP FIELDS</strong> の <strong>ip</strong> をクリックして開きます。ヒットしたイベントについて ipアドレス毎の合計数が確認できます。</p>
+<p><img alt="image-20250317222826156" src="../images/image-20250317222826156.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>集計情報をクリックすることで、この IPアドレスのみ表示や、このIPアドレスの除外など、フィルタで表示を絞り込むこともできます。</p>
+</div>
+<p>６．ログの詳細を確認してみます。<code>EVENTS</code> ウィンドウから１つ <strong>任意のイベント</strong> を選択し、行の右側に表示された <strong>→アイコン</strong> をクリックします。<code>EVENT VIEWER</code>　のウィンドウが表示されて、その中に生ログの情報が記載されています。</p>
+<p><img alt="image-20250317223429714" src="../images/image-20250317223429714.png" /></p>
+<p><img alt="image-20250317223548362" src="../images/image-20250317223548362.png" /></p>
+<p>７．画面中段のタブの <strong>Alert タブ</strong> をクリックします。ヒットしたアラートが表示されるタブに移動します。
+（今回はアラートがないため０件として表示されます）</p>
+<p><img alt="image-20250317224009382" src="../images/image-20250317224009382.png" /></p>
+<p>８．ここまで基本的な検索操作を通じて、SecOps コンソールの画面構成を確認しました。<a href="../041-threathunt">次のステップ</a> に移動します。</p>
 
 
 
@@ -563,10 +663,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

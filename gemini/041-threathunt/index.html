@@ -11,20 +11,22 @@
       
       
       
+        <link rel="prev" href="../032-check-results/">
       
-        <link rel="next" href="gemini/02-access/">
+      
+        <link rel="next" href="../042-create-query/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
-        <title>Google SecOps ハンズオン</title>
+        <title>4.1. 脅威ハンティング - Google SecOps ハンズオン</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
       
 
@@ -43,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#google-security-operations" class="md-skip">
+        <a href="#4-gemini" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="." title="Google SecOps ハンズオン" class="md-header__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
+    <a href="../.." title="Google SecOps ハンズオン" class="md-header__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              概要
+              4.1. 脅威ハンティング
             
           </span>
         </div>
@@ -173,7 +175,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Google SecOps ハンズオン" class="md-nav__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
+    <a href="../.." title="Google SecOps ハンズオン" class="md-nav__button md-logo" aria-label="Google SecOps ハンズオン" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -188,19 +190,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -210,7 +203,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -219,17 +211,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -244,7 +238,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AI (Gemini) 機能
@@ -258,7 +252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/02-access/" class="md-nav__link">
+      <a href="../02-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -316,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/031-search/" class="md-nav__link">
+      <a href="../031-search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -338,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/032-check-results/" class="md-nav__link">
+      <a href="../032-check-results/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -365,17 +359,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -390,7 +386,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             4. Gemini活用
@@ -401,10 +397,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="gemini/041-threathunt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.1. 脅威ハンティング
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -414,6 +431,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 脅威ハンティング
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -426,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/042-create-query/" class="md-nav__link">
+      <a href="../042-create-query/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -456,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gemini/05-summary/" class="md-nav__link">
+      <a href="../05-summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,6 +544,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 脅威ハンティング
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -512,11 +575,78 @@
 
 
 
-<h1 id="google-security-operations">Google Security Operations ハンズオン</h1>
-<p><img alt="image-20250316005953327" src="images/image-20250316005953327.png" /></p>
-<p>Google Security Operations (SecOps) ハンズオンにようこそ！ </p>
-<p>このハンズオンでは SecOps を実際に操作することで、「AI を搭載したインテリジェンス主導のセキュリティ運用基盤」の様々な活用方法を体験します。</p>
-<p><a href="./gemini/02-access">Gemini in SecOps 機能コース</a> :  AI を活用したセキュリティ運用の方法を確認します。(約20分)</p>
+<h1 id="4-gemini">4. Gemini 活用</h1>
+<p>それでは、AI を使った活用方法を確認していきましょう。</p>
+<h2 id="41">4.1 脅威ハンティング</h2>
+<hr />
+<p>まず最初に、Gemini in SecOps を使った「脅威ハンティング」の方法から確認します。</p>
+<p>「脅威ハンティング」は、攻撃者がすでに組織に侵入していないか調査する、能動的なセキュリティ運用手法の一つです。
+セキュリティ対策製品のアラートを調査起点とするインシデントレスポンスとは異なり、潜在的な侵害を分析する手法です。</p>
+<p>今回は、下記のシナリオを前提に調査を行います。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ある VPN 装置の脆弱性が今週明らかになり、「攻撃者 (APT41) が３ヵ月前から悪用をおこなっていた」という報道が話題になっています。この VPN 装置は自社でも利用しており、あなたは影響を懸念しています。VPN 装置のパッチ適用作業を進めていますが、脆弱性によってこの攻撃者が組織に侵入されていないかを調査したいと考えています。</p>
+</div>
+<p>１．画面左上の <strong>Google SecOps ボタン</strong> をクリックして、トップページに移動します。</p>
+<p><img alt="image-20250317225134672" src="../images/image-20250317225134672.png" /></p>
+<p>２．画面右上の <strong>Gemini ボタン</strong> をクリックすると、画面右にチャットウィンドウが開きます。</p>
+<p><img alt="image-20250317225326018" src="../images/image-20250317225326018.png" /></p>
+<p>２．右下のチャットボックス (<code>Enter a prompt here</code>) に <strong>下記のプロンプトを入力</strong> して実行します。</p>
+<pre><code>APT41はこの環境で活動していますか？
+</code></pre>
+<p>または、</p>
+<pre><code>is APT41 active in my enviroment? 
+</code></pre>
+<p><img alt="image-20250317225624641" src="../images/image-20250317225624641.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>日本語による Gemini in SecOps へのプロンプトは、現在正式にはサポートされておりません。正しく応答するケースが多いですが、もし応答が異なる場合は、併記した英語プロンプトを試してみてください。</p>
+</div>
+<p>３．Gemini からの応答が表示されます。<u>ここで時間をとって内容を確認してください。</u></p>
+<p><img alt="image-20250317230617399" src="../images/image-20250317230617399.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>APT41 の説明があります。中国の関与が疑われる攻撃者グループで、2012年から活動しており、日本も攻撃対象になっています。</p>
+</div>
+<p><img alt="image-20250317230711506" src="../images/image-20250317230711506.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>過去 3 か月間で 12 件、関連する通信が見つかったと報告がありました。この攻撃者に関連したマルウェア名などのキーワードが並んでいます。</p>
+</div>
+<p>４．応答の最後では、該当する通信先（ドメイン名やIPアドレス）と最後の通信時刻がまとめられています。つい最近も通信が行われているようです。</p>
+<p><img alt="image-20250317230832498" src="../images/image-20250317230832498.png" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>ブラウザの翻訳機能を利用して、日本語で応答を確認することもできます。(Chromeブラウザでは 右クリック → T )</p>
+</div>
+<p>５．追加調査のためのアドバイスが表示されています。<strong>Here's a search to help investigate (調査支援の検索はこちら) ボタン</strong> をクリックします。</p>
+<p><img alt="image-20250317231354486" src="../images/image-20250317231354486.png" /></p>
+<p>６．クエリが自動作成されて、SecOps で実行された結果が<u>画面左側</u>に表示されます。しばらくすると、<u>画面右側</u>のチャットウィンドウに要約が表示されます。まずこの要約から見ていきましょう。</p>
+<p><img alt="image-20250317232048933" src="../images/image-20250317232048933.png" /></p>
+<ul>
+<li>約500件のログが該当し、GCP や MS、Zscaler からの通信ログやプロセス実行ログが対象となっている。</li>
+<li>
+<p>file.exe や HelloWorld.exe によって実行されている。</p>
+</li>
+<li>
+<p>関連するホスト名は6 件あり、 jorge.stanley という端末の該当ログが一番多い。</p>
+</li>
+</ul>
+<p>７．画面左側を確認しておきます。左上のサーチウィンドウでは下記のクエリが自動実行されており、APT41 に関連するドメインや IP アドレスが指定されています。</p>
+<p><img alt="image-20250317232503261" src="../images/image-20250317232503261.png" /></p>
+<p>８．画面中段では、<code>OVERVIEW</code> としてGemini による先ほどの概要が確認できます。また、該当するイベント（ログ）が 約 500 件あることもわかります。</p>
+<p><img alt="image-20250317232832072" src="../images/image-20250317232832072.png" /></p>
+<p>９．<code>Entity summary</code> パネルでは、APT41 に関連するIOC (IPアドレス)が表示されていて、国 や AS名などのネットワーク情報が確認できます。<strong>VT Context</strong> をクリックして VirusTotal の情報を確認します。</p>
+<p><img alt="image-20250317233318623" src="../images/image-20250317233318623.png" /></p>
+<p>１０．VirusTotal でも「悪性のIPアドレス」と判定されていることが確認できます。</p>
+<p><img alt="image-20250317233525529" src="../images/image-20250317233525529.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>VirusTotal や Google Threat Intelligence ライセンスがある場合、ログインすることで詳細情報が確認できます。</p>
+</div>
+<p>１１．VirusTotal の画面を閉じて、<code>OVERVIEW</code>の画面下部を<code>Associated Entities</code>を確認すると、Geminiからの応答にあった「Jorge Stanly」が確認できます。</p>
+<p><img alt="image-20250317234537359" src="../images/image-20250317234537359.png" /></p>
+<p>１２．Gemini を活用して、APT41に関連する「脅威ハンティング」を迅速かつ容易に行うことができました。<a href="../042-create-query">次のステップ</a> に移動して、引き続き調査を行います。</p>
 
 
 
@@ -563,10 +693,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
