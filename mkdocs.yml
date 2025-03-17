@@ -32,39 +32,13 @@ markdown_extensions:
 nav:
   - 概要: 'index.md'
   - 'AI (Gemini) 機能': 
-    - '1. SecOps概要': 'gemini/index.md'
     - '2. SecOpsへのアクセス': 'gemini/02-access.md'
     - '3. 基本操作': 
       - '3.1. ログの検索': 'gemini/031-search.md'
       - '3.2. 検索結果の確認': 'gemini/032-check-results.md'
     - '4. Gemini活用': 
-      - '4.1. 脅威ハンティング': 'gemini/041-threathunt.m'
-      - '4.2. ログ調査支援': 'gemini/042-.md'
-      - '4.3. 検知ルール生成': 'gemini/042-create-rules.md'
-      - '4.4. ケースの要約': 'gemini/042-.md'
-      - '4.5. 脅威状況の要約': 'gemini/042-.md'
-      - '4.5. プレイブック作成': 'gemini/042-.md'
-    - '5. まとめ': '05-summary.md'
-
-
-
-
-
-#  - '1. ASMへのアクセス': '01-environment-access.md'
-#  - '2. 設定の確認': '02-configuration-check.md'
-#  - '3. 探索結果の確認': 
-#    - '3.1. DashBoardの確認': '031-check-dashboard.md'
-#    - '3.2. Entitiesの確認1': '032-check-entities1.md'
-#    - '3.3. Entitiesの確認2': '033-check-entities2.md'
-#    - '3.4. Technologiesの確認': '033-check-technologies.md'
-#    - '3.5. Issuesの確認': '034-check-issues.md'
-#    - '3.6. Insightsの確認': '035-check-insights.md'
-#  - '4. 自組織の状況確認': '04-check-ownproject.md'
-#  - '5. 応用編': 
-#    - '5.1. Export機能': '051-adv-export.md'
-#    - '5.2. 運用機能': '052-adv-operation.md'
-#    - '5.3. Library': '053-adv-library.md'
-#    - '5.4. 自由時間': '054-adv-break.md'
-#   - '6. まとめ': '06-summary.md'
+      - '4.1. 脅威ハンティング': 'gemini/041-threathunt.md'
+      - '4.2. ログ調査支援': 'gemini/042-create-query.md'
+    - '5. まとめ': 'gemini/05-summary.md'
 
 
