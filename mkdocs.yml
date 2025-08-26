@@ -37,8 +37,11 @@ nav:
       - '3.1. ログの検索': 'gemini/031-search.md'
       - '3.2. 検索結果の確認': 'gemini/032-check-results.md'
     - '4. Gemini活用': 
-      - '4.1. 脅威ハンティング': 'gemini/041-threathunt.md'
-      - '4.2. ログ調査支援': 'gemini/042-create-query.md'
-    - '5. まとめ': 'gemini/05-summary.md'
 
+      - '4.1. テンプレートの利用': 'gemini/041-template.md'
+      - '4.2. 脅威ハンティング': 'gemini/042-threathunt.md'
+      - '4.3. ログ調査支援': 'gemini/043-create-query.md'
+    - '5. SOAR機能': 'gemini/05-soar.md'
+
+    - '6. まとめ': 'gemini/06-summary.md'
 
