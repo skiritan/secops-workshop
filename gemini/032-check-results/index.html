@@ -586,18 +586,14 @@
 <p>ドメイン名でよく検索される「通信の宛先」や「DNSの名前解決」の項目が含まれたクエリになっています。また、対象期間は直近1日間で検索されたことがわかります。</p>
 </div>
 <p>２．画面中段には、<code>OVERVIEW</code> や <code>EVENTS</code> などのタブが並んでおり、現在は <code>OVERVIEW</code> が選択されています。その下には <code>Gemini Summary</code> として Gemini による検索結果の要約が表示されています。 <u>ここで時間をとって内容を確認してください。</u></p>
-<p><img alt="image-20250317215346508" src="../images/image-20250317215346508.png" /></p>
+<p><img alt="image-20250826234343093" src="../images/image-20250826234343093.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>1000 件以上の DNS ログが該当するようです。さらに、451 件の IP アドレスが関連すること（＝期間中にアクセスした）と、10.0.3.31などが一番関連した(=一番アクセスした) IP アドレスであること等がわかります。</p>
+<p>50 件程度のネットワークログとDNSログが該当し、それらは Microsoft や Zscaler, Tanium などの製品のログのようです。さらに、17 件の google.com 関連のドメインがあり、一番アクセスの多いドメイン ( www[.]google[.]com) や一番アクセスが少ないドメイン(youtube-ui[.]google[.]com)などが確認できます。また、7 件の ホストが関連すること（＝期間中にアクセスした）と、具体的なPC名などががわかります。</p>
 </div>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>その他にも、一番関連する FQDN 名、一番アクセスした端末のホスト名などが表示されています。</p>
-</div>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>要約の下に <code>Filter to show activity for IP address 10.0.7.84</code>  などのボタンで表示されています。これは、追加の調査を行いたい場合の表示フィルタ候補です。</p>
+<p>要約の下に <code>Filter to show activity for IP address xx.xx.xx.xx</code>  などのボタンで表示されています。これは、追加の調査を行いたい場合の表示フィルタ候補です。</p>
 </div>
 <p>３．画面下段には、<code>Entity summary</code> や <code>Prevalence of Assets</code> 、<code>Associated Entities</code> などのパネルが並んでいます。WHOIS の情報やタイムラインでのログの分布、関連する IP アドレスが表示されています。</p>
 <p><img alt="image-20250317221940838" src="../images/image-20250317221940838.png" /></p>
