@@ -14,7 +14,7 @@
         <link rel="prev" href="../031-search/">
       
       
-        <link rel="next" href="../041-threathunt/">
+        <link rel="next" href="../041-template/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -450,11 +450,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../041-threathunt/" class="md-nav__link">
+      <a href="../041-template/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    4.1. 脅威ハンティング
+    4.1. テンプレートの利用
     
   </span>
   
@@ -472,11 +472,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../042-create-query/" class="md-nav__link">
+      <a href="../042-threathunt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    4.2. ログ調査支援
+    4.2. 脅威ハンティング
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../043-create-query/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3. ログ調査支援
     
   </span>
   
@@ -502,11 +524,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-summary/" class="md-nav__link">
+      <a href="../05-soar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    5. まとめ
+    5. SOAR機能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. まとめ
     
   </span>
   
@@ -589,7 +633,7 @@
 <p><img alt="image-20250826234343093" src="../images/image-20250826234343093.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>50 件程度のネットワークログとDNSログが該当し、それらは Microsoft や Zscaler, Tanium などの製品のログのようです。さらに、17 件の google.com 関連のドメインがあり、一番アクセスの多いドメイン ( www[.]google[.]com) や一番アクセスが少ないドメイン(youtube-ui[.]google[.]com)などが確認できます。また、7 件の ホストが関連すること（＝期間中にアクセスした）と、具体的なPC名などががわかります。</p>
+<p>50 件程度のネットワークログとDNSログが該当し、それらは Microsoft や Zscaler, Tanium などの製品のログのようです。さらに、17 件の google.com 関連のドメインがあり、一番アクセスの多いドメイン ( www[.]google[.]com) や一番アクセスが少ないドメイン (youtube-ui[.]google[.]com) などが確認できます。また、7 件の ホストが関連すること（＝期間中にアクセスした）と、具体的なPC名などががわかります。</p>
 </div>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
@@ -598,7 +642,7 @@
 <p>３．画面下段には、<code>Entity summary</code> や <code>Prevalence of Assets</code> 、<code>Associated Entities</code> などのパネルが並んでいます。WHOIS の情報やタイムラインでのログの分布、関連する IP アドレスが表示されています。</p>
 <p><img alt="image-20250317221940838" src="../images/image-20250317221940838.png" /></p>
 <p><img alt="image-20250317222104298" src="../images/image-20250317222104298.png" /></p>
-<p>４．画面中段のタブに戻り <strong>Event タブ</strong> をクリックします。検索でヒットしたログについて、時系列トレンドと、具体的な個別のログが確認できます。</p>
+<p>４．画面中段のタブに戻り <strong>Result タブ</strong> をクリックします。検索でヒットしたログについて、時系列トレンドと、具体的な個別のログが確認できます。</p>
 <p><img alt="image-20250317222438317" src="../images/image-20250317222438317.png" /></p>
 <p>５．画面左の<code>AGGREGATIONS</code> ウィンドウで、ログの集計情報が確認できます。<strong>GROUP FIELDS</strong> の <strong>ip</strong> をクリックして開きます。ヒットしたイベントについて ipアドレス毎の合計数が確認できます。</p>
 <p><img alt="image-20250317222826156" src="../images/image-20250317222826156.png" /></p>
@@ -606,13 +650,17 @@
 <p class="admonition-title">Check</p>
 <p>集計情報をクリックすることで、この IPアドレスのみ表示や、このIPアドレスの除外など、フィルタで表示を絞り込むこともできます。</p>
 </div>
-<p>６．ログの詳細を確認してみます。<code>EVENTS</code> ウィンドウから１つ <strong>任意のイベント</strong> を選択し、行の右側に表示された <strong>→アイコン</strong> をクリックします。<code>EVENT VIEWER</code>　のウィンドウが表示されて、その中に生ログの情報が記載されています。</p>
+<p>６．ログの詳細を確認してみます。<code>EVENTS</code> ウィンドウから１つ <strong>任意のイベント</strong> を選択し、行の右側に表示された <strong>→アイコン</strong> をクリックします。<code>EVENT VIEWER</code>　のウィンドウが表示されて、その中にログの詳細情報が記載されています。</p>
 <p><img alt="image-20250317223429714" src="../images/image-20250317223429714.png" /></p>
-<p><img alt="image-20250317223548362" src="../images/image-20250317223548362.png" /></p>
-<p>７．画面中段のタブの <strong>Alert タブ</strong> をクリックします。ヒットしたアラートが表示されるタブに移動します。
+<p><img alt="image-20250826235643618" src="../images/image-20250826235643618.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>Event Fields の画面では正規化されたログの情報が確認できます。これは SecOps がログを取り込む際に、ログの種別を判断して格納したものです。また、Raw Log のタブに移動すると、生ログの情報が確認できます。</p>
+</div>
+<p>７．画面中段に戻り、タブの <strong>Alert タブ</strong> をクリックします。ヒットしたアラートが表示されるタブに移動します。
 （今回はアラートがないため０件として表示されます）</p>
 <p><img alt="image-20250317224009382" src="../images/image-20250317224009382.png" /></p>
-<p>８．ここまで基本的な検索操作を通じて、SecOps コンソールの画面構成を確認しました。<a href="../041-threathunt">次のステップ</a> に移動します。</p>
+<p>８．ここまで基本的な検索操作を通じて、SecOps コンソールの画面構成を確認しました。<a href="../041-template">次のステップ</a> に移動します。</p>
 
 
 
