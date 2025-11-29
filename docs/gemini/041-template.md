@@ -40,15 +40,18 @@
 
 
 !!! check
-    ユーザログインに関連するログとして、Microsoft や Okta、Google Cloud Platform で生成されたログが検索されていることが確認できます。また、"S-1-0-0"  というユーザーアカウントでログイン失敗が多いと要約されています。
+    ユーザログインに関連するログとして、Microsoft や Amazon、Google Cloud Platform で生成されたログが検索されていることが確認できます。また、"S-1-0-0"  というユーザーアカウントでログイン失敗が多いと要約されています。
 
 
 
-６．追加の調査として **Filter to show activity for user test-user** をクリックすると、Results タブに移動し、test-user というアカウントのみのログを確認することができます。時系列でのイベント数の分布や、具体的なログの詳細を確認することができます。
+６．追加の調査として **Filter to show activity for user Tim Smith** をクリックすると、Results タブに移動し、そのユーザのみのログを確認することができます。時系列でのイベント数の分布や、具体的なログの詳細を確認することができます。
 
-![image-20250827002448541](images/image-20250827002448541.png)
+![image-20251129204520194](images/image-20251129204520194.png)
 
-![image-20250827002718925](images/image-20250827002718925.png)
+![image-20250827002718925](images/image-20251129205417469.png)
+
+!!! check
+    画面上部の `ADD FILTER` 部分に `user=Tim Smith` と表示が追加されたことに注意してください。これはクエリで検索した結果に対して、さらにフィルター機能で出力を抽出している形になっています。このフィルター機能は簡単に追加、除外ができるため、手動の調査が行いやすくなっています。また、フィルター条件をクエリ文に追加することも可能です。
 
 
 
@@ -61,7 +64,9 @@
 ![image-20250827003115060](images/image-20250827003115060.png)
 
 !!! check
-    <u>ここで時間をとって</u>、**Search and Investigate > Search for outbound network connections to China** (中国への通信を検索) などのテンプレートを同様の手順で試してみてください。
+    <u>ここで時間をとって</u>、**Search and Investigate > Search for outbound network connections to China** (中国への通信を検索) のテンプレートを同様の手順で試してみてください。※ログがヒットしない場合は検索対象期間を広げてみてください
+
+
 
 ８．[次のステップ](../042-threathunt) に移動します。
 
