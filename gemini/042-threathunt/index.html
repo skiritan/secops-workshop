@@ -252,11 +252,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-access/" class="md-nav__link">
+      <a href="../01-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2. SecOpsへのアクセス
+    1. SecOpsへのアクセス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. ログの確認
     
   </span>
   
@@ -281,10 +303,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -296,8 +318,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             3. 基本操作
           </label>
@@ -371,10 +393,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -386,8 +408,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             4. Gemini活用
           </label>
@@ -646,50 +668,41 @@
 <p>日本語による Gemini in SecOps へのプロンプトは、現在正式にはサポートされておりません。正しく応答するケースが多いですが、もし応答が異なる場合は、併記した英語プロンプトを試してみてください。</p>
 </div>
 <p>３．Gemini からの応答が表示されます。<u>ここで時間をとって内容を確認してください。</u></p>
-<p><img alt="image-20250317230617399" src="../images/image-20250317230617399.png" /></p>
+<p><img alt="image-20251129210434979" src="../images/image-20251129210434979.png" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>Gemini チャットウィンドウは、画面下の [&lt;] ボタンで拡大ができます。また、Gemini が英語で応答した場合は、ブラウザの翻訳機能を利用で日本語で応答を確認することもできます。(Chromeブラウザでは 右クリック → T )</p>
+</div>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
 <p>APT41 の説明があります。中国の関与が疑われる攻撃者グループで、2012年から活動しており、日本も攻撃対象になっています。</p>
 </div>
-<p><img alt="image-20250317230711506" src="../images/image-20250317230711506.png" /></p>
+<p><img alt="image-20251129210514125" src="../images/image-20251129210514125.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>過去 3 か月間で 12 件、関連する通信が見つかったと報告がありました。この攻撃者に関連したマルウェア名などのキーワードが並んでいます。</p>
+<p>過去 3 か月間で 3 件、関連するログが見つかったと報告がありました。この攻撃者に関連した ドメイン名やマルウェアが並んでいます。</p>
 </div>
-<p>４．応答の最後では、該当する通信先（ドメイン名やIPアドレス）と最後の通信時刻がまとめられています。つい最近も通信が行われているようです。</p>
-<p><img alt="image-20250317230832498" src="../images/image-20250317230832498.png" /></p>
-<div class="admonition tips">
-<p class="admonition-title">Tips</p>
-<p>ブラウザの翻訳機能を利用して、日本語で応答を確認することもできます。(Chromeブラウザでは 右クリック → T )</p>
-</div>
-<p>５．追加調査のためのアドバイスが表示されています。<strong>Here's a search to help investigate (調査支援の検索はこちら) ボタン</strong> をクリックします。</p>
+<p>４．追加調査のためのアドバイスが表示されています。<strong>Here's a search to help investigate (調査支援の検索はこちら) ボタン</strong> をクリックします。</p>
 <p><img alt="image-20250317231354486" src="../images/image-20250317231354486.png" /></p>
-<p>６．クエリが自動作成されて、SecOps で実行された結果が<u>画面左側</u>に表示されます。しばらくすると、<u>画面右側</u>のチャットウィンドウに要約が表示されます。まずこの要約から見ていきましょう。</p>
-<p><img alt="image-20250317232048933" src="../images/image-20250317232048933.png" /></p>
+<p>５．クエリが自動作成・実行された後、結果概要がチャットウィンドウに表示されます。同じ内容が<u>画面左側</u>でも確認できるので、チャットウィンドウ一度閉じて、<code>overview</code> タブで概要を確認します。</p>
+<p><img alt="image-20251129213440824" src="../images/image-20251129213440824.png" /></p>
 <ul>
-<li>約500件のログが該当し、GCP や MS、Zscaler からの通信ログやプロセス実行ログが対象となっている。</li>
-<li>
-<p>file.exe や HelloWorld.exe によって実行されている。</p>
-</li>
-<li>
-<p>関連するホスト名は6 件あり、 jorge.stanley という端末の該当ログが一番多い。</p>
-</li>
+<li>Windows Sysmon ログでプロセス起動としてログが残っている</li>
+<li><code>C:\Windows\explorer.exe</code> によって <code>C:\Users\UC\Downloads\sample.exe</code> が実行された</li>
 </ul>
-<p>７．画面左側を確認しておきます。左上のサーチウィンドウでは下記のクエリが自動実行されており、APT41 に関連するドメインや IP アドレスが指定されています。</p>
-<p><img alt="image-20250317232503261" src="../images/image-20250317232503261.png" /></p>
-<p>８．画面中段では、<code>OVERVIEW</code> としてGemini による先ほどの概要が確認できます。また、該当するイベント（ログ）が 約 500 件あることもわかります。</p>
-<p><img alt="image-20250317232832072" src="../images/image-20250317232832072.png" /></p>
-<p>９．<code>Entity summary</code> パネルでは、APT41 に関連するIOC (IPアドレス)が表示されていて、国 や AS名などのネットワーク情報が確認できます。<strong>VT Context</strong> をクリックして VirusTotal の情報を確認します。</p>
-<p><img alt="image-20250317233318623" src="../images/image-20250317233318623.png" /></p>
-<p>１０．VirusTotal でも「悪性のIPアドレス」と判定されていることが確認できます。</p>
-<p><img alt="image-20250317233525529" src="../images/image-20250317233525529.png" /></p>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
+<p>６． <code>Entities</code>パネルでは、APT41 に関連するIOC (ドメイン名)がリスト表示されています。また<code>Entity summary</code>　では、各IOCについて WHOISなどの詳細情報も確認できます。<strong>VT Context</strong> をクリックして VirusTotal の評価も確認できます。</p>
+<p><img alt="image-20251129214051522" src="../images/image-20251129214051522.png" /></p>
+<p>VirusTotal でも「悪性の高いドメイン名/ファイル」と判定されていることが確認できます。</p>
+<p><img alt="image-20251129214239438" src="../images/image-20251129214239438.png" /></p>
+<p><img alt="image-20251129214713555" src="../images/image-20251129214713555.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>VirusTotal や Google Threat Intelligence ライセンスがある場合、ログインすることで詳細情報が確認できます。</p>
 </div>
-<p>１１．VirusTotal の画面を閉じて、<code>OVERVIEW</code>の画面下部を<code>Associated Entities</code>を確認すると、Geminiからの応答にあった「Jorge Stanly」が確認できます。</p>
-<p><img alt="image-20250317234537359" src="../images/image-20250317234537359.png" /></p>
-<p>１２．Gemini を活用して APT41に関連する「脅威ハンティング」を迅速かつ容易に行うことができました。 <a href="../043-create-query">次のステップ</a> に移動して、引き続き調査を行います。</p>
+<p>７．<code>Results</code> タブに移り、該当するログを確認します。</p>
+<p><img alt="image-20251129213857437" src="../images/image-20251129213857437.png" /></p>
+<p>tim_smith_admin の端末で、この IoC に該当するファイル (nbtscan.exe) が実行されたことを示すログを発見、確認することができました。</p>
+<p>８．Gemini を活用して APT41に関連する「脅威ハンティング」を迅速かつ容易に行うことができました。 <a href="../043-create-query">次のステップ</a> に移動します。</p>
 
 
 

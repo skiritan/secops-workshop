@@ -252,11 +252,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-access/" class="md-nav__link">
+      <a href="../01-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2. SecOpsへのアクセス
+    1. SecOpsへのアクセス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. ログの確認
     
   </span>
   
@@ -283,10 +305,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -298,8 +320,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             3. 基本操作
           </label>
@@ -421,10 +443,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -436,8 +458,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             4. Gemini活用
           </label>
@@ -623,43 +645,46 @@
 <p>基本的な検索操作を通じて、SecOps コンソールの画面構成を確認します。</p>
 <h2 id="32">3.2  検索結果の確認</h2>
 <hr />
-<p>１．検索結果を確認します。 画面上部には、実行されたクエリと、検索対象の期間が表示されています。</p>
-<p><img alt="image-20250317214457880" src="../images/image-20250317214457880.png" /></p>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>ドメイン名でよく検索される「通信の宛先」や「DNSの名前解決」の項目が含まれたクエリになっています。また、対象期間は直近1日間で検索されたことがわかります。</p>
-</div>
-<p>２．画面中段には、<code>OVERVIEW</code> や <code>EVENTS</code> などのタブが並んでおり、現在は <code>OVERVIEW</code> が選択されています。その下には <code>Gemini Summary</code> として Gemini による検索結果の要約が表示されています。 <u>ここで時間をとって内容を確認してください。</u></p>
+<p>１．検索結果を確認します。 画面上部には<code>Results</code> や <code>Alerts</code> などのタブが並んでおり、現在は <code>Results</code> が選択されています。まず <strong>Overview タブ</strong> をクリックして、概要を確認します。</p>
+<p><img alt="image-20251129182228639" src="../images/image-20251129182228639.png" /></p>
+<p>２．冒頭に <code>Gemini Summary</code> として Gemini による検索結果の要約が表示されています。 <u>ここで時間をとって内容を確認してください。</u></p>
+<p><img alt="image-20251129194122551" src="../images/image-20251129194122551.png" /></p>
 <p><img alt="image-20250826234343093" src="../images/image-20250826234343093.png" /></p>
+<p>下記のような検索結果であったことがわかります。</p>
+<ul>
+<li>10 件程度のネットワークログとDNSログが該当し、それらは Microsoft や Zscaler, Tanium などの製品のログのようです。</li>
+<li>7 件の ユーザが該当し（＝期間中にアクセスし）、あわせて一番関連が強いユーザ（Mike Ross）と弱いユーザ(Tim Smith) が表示されています。</li>
+<li>その他にも、ホスト名視点での要約（ 4 件）、IP アドレスベースでの要約（4件）が確認できます。</li>
+</ul>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>50 件程度のネットワークログとDNSログが該当し、それらは Microsoft や Zscaler, Tanium などの製品のログのようです。さらに、17 件の google.com 関連のドメインがあり、一番アクセスの多いドメイン ( www[.]google[.]com) や一番アクセスが少ないドメイン (youtube-ui[.]google[.]com) などが確認できます。また、7 件の ホストが関連すること（＝期間中にアクセスした）と、具体的なPC名などががわかります。</p>
+<p>要約の下に <code>Filter out activitiy for hostname google.com</code>  などのボタンで表示されています。これは、追加調査を行う場合の表示フィルタ候補として Gemini が用意したものです。</p>
 </div>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>要約の下に <code>Filter to show activity for IP address xx.xx.xx.xx</code>  などのボタンで表示されています。これは、追加の調査を行いたい場合の表示フィルタ候補です。</p>
-</div>
-<p>３．画面下段には、<code>Entity summary</code> や <code>Prevalence of Assets</code> 、<code>Associated Entities</code> などのパネルが並んでいます。WHOIS の情報やタイムラインでのログの分布、関連する IP アドレスが表示されています。</p>
+<p>３．画面下段には、<code>Entity summary</code> や <code>Prevalence of Assets</code> 、<code>Associated Entities</code> 、<code>Sub-domains and sibling domains</code> などのパネルが並んでいます。WHOIS の情報や、タイムラインでのログの分布、関連する IP アドレス、ドメイン名 が表示されています。</p>
 <p><img alt="image-20250317221940838" src="../images/image-20250317221940838.png" /></p>
 <p><img alt="image-20250317222104298" src="../images/image-20250317222104298.png" /></p>
-<p>４．画面中段のタブに戻り <strong>Result タブ</strong> をクリックします。検索でヒットしたログについて、時系列トレンドと、具体的な個別のログが確認できます。</p>
-<p><img alt="image-20250317222438317" src="../images/image-20250317222438317.png" /></p>
-<p>５．画面左の<code>AGGREGATIONS</code> ウィンドウで、ログの集計情報が確認できます。<strong>GROUP FIELDS</strong> の <strong>ip</strong> をクリックして開きます。ヒットしたイベントについて ipアドレス毎の合計数が確認できます。</p>
+<p><img alt="image-20251129201107075" src="../images/image-20251129201107075.png" /></p>
+<p>４．画面上部のタブに戻り <strong>Results タブ</strong> をクリックします。このタブでは具体的な検索結果が確認できます。</p>
+<p><img alt="image-20251129201252211" src="../images/image-20251129201252211.png" /></p>
+<p>画面は３つの部分で構成されており、検索でヒットしたログについて、(a)グラフによる可視化を行う部分、(b)集計を目的とした部分、(c)個別ログを確認する部分に分かれています。</p>
+<p>(a) の<code>Activity OverTime</code>では、トレンドが確認でき、下部のバーでズームイン/アウトが可能です。</p>
+<p><img alt="image-20251129203618181" src="../images/image-20251129203618181.png" /></p>
+<p>５．(b) の<code>AGGREGATIONS</code> ウィンドウで、ログの集計情報が確認できます。<strong>GROUP FIELDS</strong> の <strong>ip</strong> をクリックして開きます。ヒットしたイベントについて ipアドレス毎の合計数が確認できます。</p>
 <p><img alt="image-20250317222826156" src="../images/image-20250317222826156.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>集計情報をクリックすることで、この IPアドレスのみ表示や、このIPアドレスの除外など、フィルタで表示を絞り込むこともできます。</p>
+<p>集計情報をクリックすることで、この IPアドレスのみ表示や、このIPアドレスの除外など、フィルタとして表示を絞り込むこともできます。</p>
 </div>
-<p>６．ログの詳細を確認してみます。<code>EVENTS</code> ウィンドウから１つ <strong>任意のイベント</strong> を選択し、行の右側に表示された <strong>→アイコン</strong> をクリックします。<code>EVENT VIEWER</code>　のウィンドウが表示されて、その中にログの詳細情報が記載されています。</p>
-<p><img alt="image-20250317223429714" src="../images/image-20250317223429714.png" /></p>
+<p>６．(c) の<code>EVENTS</code> ウィンドウから１つ <strong>任意のイベント</strong> を選択しクリックします。<code>EVENT VIEWER</code>　のウィンドウが表示されて、その中にログの詳細情報が記載されています。</p>
+<p><img alt="image-20251129203931795" src="../images/image-20251129203931795.png" /></p>
 <p><img alt="image-20250826235643618" src="../images/image-20250826235643618.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
 <p>Event Fields の画面では正規化されたログの情報が確認できます。これは SecOps がログを取り込む際に、ログの種別を判断して格納したものです。また、Raw Log のタブに移動すると、生ログの情報が確認できます。</p>
 </div>
-<p>７．画面中段に戻り、タブの <strong>Alert タブ</strong> をクリックします。ヒットしたアラートが表示されるタブに移動します。
+<p>７．画面上部に戻り、タブの <strong>Alerts タブ</strong> をクリックします。ヒットしたアラートが表示されるタブに移動します。
 （今回はアラートがないため０件として表示されます）</p>
-<p><img alt="image-20250317224009382" src="../images/image-20250317224009382.png" /></p>
+<p><img alt="image-20251129203825923" src="../images/image-20251129203825923.png" /></p>
 <p>８．ここまで基本的な検索操作を通じて、SecOps コンソールの画面構成を確認しました。<a href="../041-template">次のステップ</a> に移動します。</p>
 
 

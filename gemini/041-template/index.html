@@ -252,11 +252,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-access/" class="md-nav__link">
+      <a href="../01-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2. SecOpsへのアクセス
+    1. SecOpsへのアクセス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. ログの確認
     
   </span>
   
@@ -281,10 +303,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -296,8 +318,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             3. 基本操作
           </label>
@@ -371,10 +393,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -386,8 +408,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             4. Gemini活用
           </label>
@@ -637,16 +659,20 @@
 <p><img alt="image-20250827001552959" src="../images/image-20250827001552959.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>ユーザログインに関連するログとして、Microsoft や Okta、Google Cloud Platform で生成されたログが検索されていることが確認できます。また、"S-1-0-0"  というユーザーアカウントでログイン失敗が多いと要約されています。</p>
+<p>ユーザログインに関連するログとして、Microsoft や Amazon、Google Cloud Platform で生成されたログが検索されていることが確認できます。また、"S-1-0-0"  というユーザーアカウントでログイン失敗が多いと要約されています。</p>
 </div>
-<p>６．追加の調査として <strong>Filter to show activity for user test-user</strong> をクリックすると、Results タブに移動し、test-user というアカウントのみのログを確認することができます。時系列でのイベント数の分布や、具体的なログの詳細を確認することができます。</p>
-<p><img alt="image-20250827002448541" src="../images/image-20250827002448541.png" /></p>
-<p><img alt="image-20250827002718925" src="../images/image-20250827002718925.png" /></p>
+<p>６．追加の調査として <strong>Filter to show activity for user Tim Smith</strong> をクリックすると、Results タブに移動し、そのユーザのみのログを確認することができます。時系列でのイベント数の分布や、具体的なログの詳細を確認することができます。</p>
+<p><img alt="image-20251129204520194" src="../images/image-20251129204520194.png" /></p>
+<p><img alt="image-20250827002718925" src="../images/image-20251129205417469.png" /></p>
+<div class="admonition check">
+<p class="admonition-title">Check</p>
+<p>画面上部の <code>ADD FILTER</code> 部分に <code>user=Tim Smith</code> と表示が追加されたことに注意してください。これはクエリで検索した結果に対して、さらにフィルター機能で出力を抽出している形になっています。このフィルター機能は簡単に追加、除外ができるため、手動の調査が行いやすくなっています。また、フィルター条件をクエリ文に追加することも可能です。</p>
+</div>
 <p>７．その他のテンプレートも試してみましょう。画面右上のメニューアイコンから <strong>New Chat</strong> をクリックすることで、新しいテンプレートを実行できます。</p>
 <p><img alt="image-20250827003115060" src="../images/image-20250827003115060.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p><u>ここで時間をとって</u>、<strong>Search and Investigate &gt; Search for outbound network connections to China</strong> (中国への通信を検索) などのテンプレートを同様の手順で試してみてください。</p>
+<p><u>ここで時間をとって</u>、<strong>Search and Investigate &gt; Search for outbound network connections to China</strong> (中国への通信を検索) のテンプレートを同様の手順で試してみてください。※ログがヒットしない場合は検索対象期間を広げてみてください</p>
 </div>
 <p>８．<a href="../042-threathunt">次のステップ</a> に移動します。</p>
 

@@ -252,11 +252,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-access/" class="md-nav__link">
+      <a href="../01-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2. SecOpsへのアクセス
+    1. SecOpsへのアクセス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. ログの確認
     
   </span>
   
@@ -281,10 +303,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -296,8 +318,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             3. 基本操作
           </label>
@@ -371,10 +393,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -386,8 +408,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             4. Gemini活用
           </label>
@@ -623,31 +645,28 @@
 <p>Gemini in SecOps を使った「自然言語でのログ検索」の方法を確認します。</p>
 <h2 id="43">4.3 ログ調査支援</h2>
 <hr />
-<p>シナリオの続きとして、関連するログが一番多かった端末 (jorge.stanley) を調査しましょう。</p>
+<p>シナリオの続きとして、関連するログが一番多かった端末 (tim.smith) を調査しましょう。</p>
 <p>先ほどの画面から継続してログを調査することもできますが、ここでは新規に Gemini を使った検索方法を確認します。</p>
 <p>１．画面左上の <strong>Google SecOps ボタン</strong> をクリックして、トップページに移動します。</p>
 <p><img alt="image-20250317225134672" src="../images/image-20250317225134672.png" /></p>
 <p>２．画面右上の <strong>Gemini ボタン</strong> をクリックすると、画面右にチャットウィンドウが開きます。</p>
 <p><img alt="image-20250317225326018" src="../images/image-20250317225326018.png" /></p>
 <p>３．右下のチャットボックス (<code>Enter a prompt here</code>) に <strong>下記のプロンプトを入力</strong> して実行します。</p>
-<pre><code>jorge.stanley の端末のログを3か月分、表示してください。
+<pre><code>tim.smith に関連する直近１か月間のイベントを表示
 </code></pre>
 <p>または、</p>
-<pre><code>Show me latest 3month events associated with jorge.stanley.
+<pre><code>Show me latest 1 month events associated with tim.smith.
 </code></pre>
-<p><img alt="image-20250317235803249" src="../images/image-20250317235803249.png" /></p>
-<p>４．Gemini がクエリを作成して、チャットボックスに表示してくれます。内容を確認して <strong>Run Search</strong> ボタンをクリックします。</p>
-<p><img alt="image-20250318000035589" src="../images/image-20250318000035589.png" /></p>
-<p>５．クエリの実行結果が<u>画面左側</u>に表示されます。このように、自然言語で調査したい内容を Gemini に伝えて、クエリを容易に実行することができます。</p>
-<p><img alt="image-20250318000243898" src="../images/image-20250318000243898.png" /></p>
-<p>６．<code>EVENTS</code> や <code>ALERTS</code> タブに移動することで、通信の開始日時や詳細を確認できます。もしくは、同様に Gemini に具体的な調査を依頼してクエリを生成することもできます。</p>
-<p><img alt="image-20250318001232835" src="../images/image-20250318001232835.png" /></p>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>OVERVIEW の Entity summary パネルで、Jorge Stanly についてのユーザ情報も確認できます。 勤務地や従業員番号、役職や電話番号などです。これはエンリッチ機能の一つで、 ActiveDirectory や Okta などから情報を取得したものです。このように SecOps は調査で必要となる参考情報を付加して支援することができます。</p>
-</div>
-<p>​    <img alt="image-20250318001150098" src="../images/image-20250318001150098.png" /></p>
-<p>６．「脅威ハンティング」で発見した事象に対して、追加調査も Gemini の支援を受けて進めていくことができます。実際の対応であれば追加調査を進めますが、今回は AI 活用の体験が目的ですので、このステップはここで終了です。 <a href="../05-soar">次のステップ</a> に移動します。</p>
+<p><img alt="image-20251129222357363" src="../images/image-20251129222357363.png" /></p>
+<p>４．Gemini がクエリを作成して、チャットボックスに表示します。内容を確認して <strong>Run Search</strong> ボタンをクリックします。</p>
+<p><img alt="image-20251129222528069" src="../images/image-20251129222528069.png" /></p>
+<p>５．クエリの実行結果が<u>画面左側</u>に表示されます。このように、Gemini チャットウィンドウ経由でもクエリを容易に実行することができます。</p>
+<p><img alt="image-20251129222706894" src="../images/image-20251129222706894.png" /></p>
+<p>６．  <code>OVERVIEW</code> 画面下部の の <code>Entity summary</code> パネルで、このユーザ情報も確認できます。 勤務地や従業員番号、役職や電話番号などです。これはエンリッチ機能の一つで、 ActiveDirectory や Okta などから情報を取得したものです。このように SecOps は調査で必要となる参考情報を付加して支援することができます。</p>
+<p><img alt="image-20251129222829117" src="../images/image-20251129222829117.png" /></p>
+<p>７．<code>Results</code> や <code>Alerts</code> タブに移動することで、さらに詳細を確認していくことができます。もしくは、先ほどと同じように Gemini に具体的な調査を依頼してクエリを生成することもできます。</p>
+<p><img alt="image-20251129222849728" src="../images/image-20251129222849728.png" /></p>
+<p>８．「脅威ハンティング」で発見した事象に対して、追加調査も Gemini の支援を受けて進めていくことができます。実際の対応では追加調査を進めますが、今回は AI 活用の体験が目的ですので、このステップはここで終了です。 <a href="../05-soar">次のステップ</a> に移動します。</p>
 
 
 

@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../02-access/">
+        <link rel="prev" href="../02-dashboard/">
       
       
         <link rel="next" href="../032-check-results/">
@@ -252,11 +252,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-access/" class="md-nav__link">
+      <a href="../01-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    2. SecOpsへのアクセス
+    1. SecOpsへのアクセス
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. ログの確認
     
   </span>
   
@@ -283,10 +305,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -298,8 +320,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             3. 基本操作
           </label>
@@ -421,10 +443,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -436,8 +458,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             4. Gemini活用
           </label>
@@ -623,21 +645,21 @@
 <p>基本的な検索操作を通じて、SecOps コンソールの画面構成を確認します。</p>
 <h2 id="31">3.1 ログの検索</h2>
 <hr />
-<p>１．画面左上のメニューバーから <strong>Investigation</strong> &gt; <strong>SIEM Search</strong> をクリックし、画面右上にある <strong>Go to Legacy search</strong> のリンクをクリックすると、レガシーサーチ画面に移動します。</p>
+<p>１．画面左上のメニューバーから <strong>Investigation</strong> &gt; <strong>SIEM Search</strong> をクリックして、サーチ画面に移動します。</p>
 <p><img alt="image-20250826233705963" src="../images/image-20250826233705963.png" /></p>
-<p>２．レガシーサーチ画面では、 Google の検索画面に似た検索ウィンドウと、その下に現在 SecOps に格納されているログの情報が表示されています。</p>
-<p><img alt="image-20250826233906689" src="../images/image-20250826233906689.png" /></p>
+<p>２．サーチ画面では、 画面上部の <code>Enter any question here ...</code>　に検索したい単語や文章を入れることで、検索クエリを作成することができます。</p>
+<p><img alt="image-20251129132029922" src="../images/image-20251129132029922.png" /></p>
+<p>３．ここでは例として、 google.com に関連するログを検索してみます。このウィンドウに <strong>「過去1週間の google.com にアクセスしたログ」</strong> と入力して、右側の <strong>Generate Query</strong>  をクリックします。しばらくすると下部に <code>domain= "google.com"</code> とクエリが作成されます。</p>
+<p><img alt="image-20251129132944289" src="../images/image-20251129132944289.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>このデモ環境には約 1300 万件のログが格納されており、サイズは約 24 GBであることがわかります。</p>
+<p>検索対象期間が自動的に「過去１週間」に設定されたことも確認できます（灰色枠の部分）</p>
 </div>
-<p>３．ここでは、格納された情報から google.com に関連するログを検索してみます。検索ウィンドウに <strong>google.com</strong> と入力して、右側の <strong>SEARCHボタン</strong> をクリックします。　</p>
-<p><img alt="image-20250317213417944" src="../images/image-20250317213417944.png" /></p>
-<p>４．SecOps は入力された検索文字列がドメイン名であると判定し、検索方法の候補を表示します。<strong>地球儀のアイコン</strong> を選択し、ドメインによるテンプレート検索を行います。</p>
-<p><img alt="image-20250317213915174" src="../images/image-20250317213915174.png" /></p>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>その他の検索方法として、UDM Search(インデックス検索)、Raw Log search(全文検索)の候補が確認できます。</p>
+<p>４．右側の <strong>SEARCHボタン</strong> をクリックして検索を実行します。</p>
+<p><img alt="image-20251129181828693" src="../images/image-20251129181828693.png" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>クエリの書き方に習熟している場合は、直接クエリを入力することもできます。入力補完機能があるのでインデックス(UDM)を選択しながら入力できます。</p>
 </div>
 <p>５．<a href="../032-check-results">次のステップ</a> に移動して、検索結果を確認します。</p>
 
