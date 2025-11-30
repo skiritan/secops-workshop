@@ -44,4 +44,10 @@ nav:
     - '5. SOAR機能': 'gemini/05-soar.md'
 
     - '6. まとめ': 'gemini/06-summary.md'
+  - '脅威ハント機能': 
+    - '1. SecOpsへのアクセス': 'threathunt/01-access.md'
+    - '2. IOCの確認': 'threathunt/02-iocmatch.md'
+    - '3. ログの調査': 'threathunt/03-search.md'
+    - '4. アラートの確認': 'threathunt/04-investigation.md'
+    - '5. まとめ': 'threathunt/05-summary.md'
 
