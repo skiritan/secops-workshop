@@ -14,7 +14,7 @@
         <link rel="prev" href="../01-access/">
       
       
-        <link rel="next" href="../031-search/">
+        <link rel="next" href="../03-search/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>2. ログの確認 - Google SecOps ハンズオン</title>
+        <title>2. IOCの確認 - Google SecOps ハンズオン</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#2-ioc-match" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. ログの確認
+              2. IOCの確認
             
           </span>
         </div>
@@ -211,19 +211,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -238,7 +236,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AI (Gemini) 機能
@@ -252,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-access/" class="md-nav__link">
+      <a href="../../gemini/01-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -271,31 +269,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    2. ログの確認
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../gemini/02-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -305,35 +282,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      ダッシュボートの表示
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -382,7 +330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../031-search/" class="md-nav__link">
+      <a href="../../gemini/031-search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../032-check-results/" class="md-nav__link">
+      <a href="../../gemini/032-check-results/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -470,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../041-template/" class="md-nav__link">
+      <a href="../../gemini/041-template/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../042-threathunt/" class="md-nav__link">
+      <a href="../../gemini/042-threathunt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -514,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../043-create-query/" class="md-nav__link">
+      <a href="../../gemini/043-create-query/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -544,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-soar/" class="md-nav__link">
+      <a href="../../gemini/05-soar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -566,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-summary/" class="md-nav__link">
+      <a href="../../gemini/06-summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,17 +540,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -617,7 +567,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             脅威ハント機能
@@ -631,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../threathunt/01-access/" class="md-nav__link">
+      <a href="../01-access/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,10 +600,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../threathunt/02-iocmatch/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2. IOCの確認
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -663,6 +634,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      シナリオ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ioc-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoC Match 画面での確認
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -675,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../threathunt/03-search/" class="md-nav__link">
+      <a href="../03-search/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -697,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../threathunt/04-investigation/" class="md-nav__link">
+      <a href="../04-investigation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -719,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../threathunt/05-summary/" class="md-nav__link">
+      <a href="../05-summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,7 +779,16 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      ダッシュボートの表示
+      シナリオ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ioc-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      IoC Match 画面での確認
     </span>
   </a>
   
@@ -792,40 +810,39 @@
 
 
 
-<h1 id="1">1. ログの確認</h1>
-<p>まず最初に、どのようなログが SecOps に取り込まれているかを確認します。</p>
-<h2 id="_1">ダッシュボートの表示</h2>
+<h1 id="2-ioc-match">2. IOC Match による確認</h1>
+<h2 id="_1">シナリオ</h2>
 <hr />
-<p>１．画面左上のメニューバーから <strong>Dashboards &amp; Reports  &gt; Dashborads</strong> をクリックして、ダッシュボード画面に移動します。</p>
+<p>業界 ISAC からの早期警戒情報として、下記の通知がありました。</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>UNC-AL (架空の脅威アクター)が、この業界に対して攻撃キャンペーンを活性化させています。ある ISAC 会員企業において、機密秘密の情報に対して不正アクセスを行う試みを検知、対応しました。関連する IOC を下記に共有します。
+<code>a1abc3d11c16ae83b9a7cf62ebe6d144dfc5e19b579a99bad062a9d31cf30bfe</code></p>
+</div>
+<p>この IOC について、この環境への影響を調査していきます。</p>
+<h2 id="ioc-match">IoC Match 画面での確認</h2>
+<p>SecOps には IOC 視点で状況をまとめる画面があるので、まずこちらで確認します。</p>
+<p>１．画面左上のメニューバーから <strong>Detection &gt; Alerts &amp; IOCs</strong> をクリックして、アラート管理画面に移動します。</p>
+<p><img alt="image-20251130190051744" src="../images/image-20251130190051744.png" /></p>
 <p>​   </p>
-<p><img alt="image-20251129153329088" src="../images/image-20251129153329088.png" /></p>
-<p>２．ダッシュボードの一覧が表示されます。この中からデータ取り込み状況のダッシュボードを選択します。画面右上の  <code>Search...</code> に <strong>Data</strong>  と入力して検索し、 リストから <strong>Data Ingestion and Health</strong> を見つけてクリックしてください。</p>
-<p><img alt="image-20251129153648658" src="../images/image-20251129153648658.png" /></p>
-<p>３．ログ取り込み状況を可視化したダッシュボードが表示されるので内容を確認します。</p>
-<p><img alt="image-20251129154059429" src="../images/image-20251129154059429.png" /></p>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>デフォルトでは過去 1 週間の状況を表示します。このデモ環境では約 10 万件 ( =0.1 millions Log Count)のログが 1 週間で格納されたようです。また、右側のグラフでログ種別ごとの件数が確認できます。</p>
-</div>
-<div class="admonition tips">
-<p class="admonition-title">Tips</p>
-<p>ダッシュボードの集計期間を変更することも可能です。（灰色枠の in the past 7 days の部分）</p>
-</div>
-<p>４．画面をスクロールし、画面中部の <code>Ingestion - Events by Log Type</code> テーブルまで移動します。各ログ種別の取り込み状況が表示されているので、どのようなログが格納されているか確認してください。</p>
-<p><img alt="" src="../images/image-20251129155532524.png" /></p>
-<div class="admonition tips">
-<p class="admonition-title">Tips</p>
-<p><code>&lt;&gt;</code> アイコンをクリックすると全画面表示に切り替えることができます。</p>
-</div>
-<p>下記のような様々なログが格納されていることがわかります。</p>
+<p>３．上部のタブで <strong>IOC MATCHS</strong> をクリックします。</p>
+<p><img alt="image-20251130200934385" src="../images/image-20251130200934385.png" /></p>
+<p>４．IOC MATCH の画面が表示されます。この画面では、SecOps に取り込まれたログについて「評価の悪い IOC」に合致したものを、対象端末とともに確認できます。また、重大度や攻撃者グループ、攻撃キャンペーンなどの情報も併せて表示されています。</p>
+<p><img alt="image-20251130201802524" src="../images/image-20251130201802524.png" /></p>
+<p>画面上部の期間表示部分の <strong>カレンダーアイコン</strong> をクリックし、 <strong>Last Month</strong> を選択した後、 <strong>Apply</strong> ボタンをクリックします。</p>
+<p><img alt="image-20251130202018643" src="../images/image-20251130202018643.png" /></p>
+<p>５．期間内で合致した IOC が表示されました。ここで早期警戒の IOC が含まれているかを確認します。<code>Search</code>の部分に  <strong>a1abc3d11c16ae83b9a7cf62ebe6d144dfc5e19b579a99bad062a9d31cf30bfe</strong>　を入力して表示を絞り込みます。</p>
+<p><img alt="image-20251130202241520" src="../images/image-20251130202241520.png" /></p>
+<p>表示が０で、該当がありませんでした。この場合は下記の２つのケースが考えられます。</p>
 <ul>
-<li>Windows OS のログ - イベントログ や Sysmonログ  (WINEVTLOG, WINDOWS_SYSMON)  </li>
-<li>EDR のログ - CrowdStrike や MS Defender (CS_EDR , MICROSOFT_DEFENDER_ENDPOINT)</li>
-<li>IdP の認証ログ -  EntraID や Okta, Active Directory (AZURE_AD, OKTA, WINDOWS_AD </li>
-<li>Web プロキシの通信ログ - zScaler (ZSCALER_WEBPROXY) </li>
-<li>クラウド環境のログ - 各クラウドのログ (WORKSPACE_ALERTS, GCP_CLOUDAUDIT, GUARDDUTYなど)</li>
+<li>IOC に関連するログがない</li>
+<li>IOC が評価の悪いものとして扱われていない</li>
 </ul>
-<p>５．<a href="../031-search">次のステップ</a> に移動します</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>このシナリオでは検出がありませんでしたが、IOC Match は IOC とのマッチ状況が一覧で確認でき、重大度も表示されるため優先度をつけて確認を行いたい場合に便利な画面です。</p>
+</div>
+<p>６．<a href="../03-search">次のステップ</a> に移動します</p>
 
 
 
