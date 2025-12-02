@@ -31,6 +31,8 @@ markdown_extensions:
 # Navigation
 nav:
   - 概要: 'index.md'
+  - 'ハンズオン準備': 
+    - '1. SecOpsへのアクセス': 'prep/01-access.md'
   - 'AI (Gemini) 機能': 
     - '1. SecOpsへのアクセス': 'gemini/01-access.md'
     - '2. ログの確認': 'gemini/02-dashboard.md'
